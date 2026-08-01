@@ -1,0 +1,28 @@
+import FAQ from "@/components/sections/FAQ";
+import Hero from "@/components/sections/Hero";
+import LocationSection from "@/components/sections/LocationSection";
+import ServicesSection from "@/components/sections/ServicesSection";
+import ContactCtaSection from "@/components/sections/ContactCtaSection";
+import TrustStrip from "@/components/sections/TrustStrip";
+import Section from "@/components/ui/Section";
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <TrustStrip />
+      <Section id="contact-jason">
+        <ContactCtaSection />
+      </Section>
+      <Section id="services">
+        <ServicesSection />
+      </Section>
+      <Section id="location">
+        <LocationSection />
+      </Section>
+      <Section id="faq">
+        <FAQ />
+      </Section>
+    </>
+  );
+}
