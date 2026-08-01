@@ -11,16 +11,14 @@ const modalContent = {
     title: "Preview the estimate form",
     submitLabel: "Preview estimate request",
     successTitle: "Demo form preview complete",
-    successMessage:
-      "This is an unofficial website concept, so this form does not submit information to PML Junk Removal. To contact the business directly, call or text Jason at (515) 901-3779.",
+    successMessage: `This is an unofficial website concept, so this form does not submit information to ${siteConfig.name}. To contact the business directly, call or text ${siteConfig.owner} at ${siteConfig.contact.phone}.`,
   },
   contact: {
     eyebrow: "Contact",
-    title: "Contact Jason",
+    title: "Contact Gavin",
     submitLabel: "Preview message",
     successTitle: "Demo form preview complete",
-    successMessage:
-      "This is an unofficial website concept, so this form does not submit information to PML Junk Removal. To contact the business directly, call or text Jason at (515) 901-3779.",
+    successMessage: `This is an unofficial website concept, so this form does not submit information to ${siteConfig.name}. To contact the business directly, call or text ${siteConfig.owner} at ${siteConfig.contact.phone}.`,
   },
 };
 
@@ -90,15 +88,14 @@ const LeadModal = ({
             </p>
             <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
               <a href={siteConfig.contact.phoneHref} className="underline">Call {siteConfig.contact.phone}</a>
-              <a href={siteConfig.contact.smsHref} className="underline">Text Jason</a>
-              <a href={siteConfig.contact.emailHref} className="underline">{siteConfig.contact.email}</a>
+              <a href={siteConfig.contact.smsHref} className="underline">Text Gavin</a>
             </div>
           </div>
         ) : (
           <form className="space-y-4" onSubmit={onSubmit}>
             <div className="border-l-4 border-[#111111] bg-[#f3f3f1] p-3 text-sm text-[#555555]">
               <p className="font-bold text-[#171717]">Demo form only</p>
-              <p className="mt-1">This form does not send a message. Contact Jason directly at <a href={siteConfig.contact.phoneHref} className="font-semibold underline">{siteConfig.contact.phone}</a> or <a href={siteConfig.contact.emailHref} className="font-semibold underline">{siteConfig.contact.email}</a>.</p>
+              <p className="mt-1">This form does not send a message. Call or text Gavin directly at <a href={siteConfig.contact.phoneHref} className="font-semibold underline">{siteConfig.contact.phone}</a>.</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="block text-sm font-semibold text-[#202020]">
@@ -161,7 +158,7 @@ const LeadModal = ({
                     <input
                       required
                       name="pickup-address"
-                      placeholder="Johnston, IA"
+                      placeholder="Des Moines, IA"
                       className="mt-2 w-full border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition focus:border-(--accent)"
                     />
                   </label>
@@ -187,8 +184,8 @@ const LeadModal = ({
                 className="mt-2 w-full resize-none border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition placeholder:text-[#8a867f] focus:border-(--accent)"
                 placeholder={
                   isBooking
-                    ? "Describe the items, approximate amount, access details, or anything else Jason should know."
-                    : "What would you like to ask Jason?"
+                    ? "Describe the items, approximate amount, access details, or anything else Gavin should know."
+                    : "What would you like to ask Gavin?"
                 }
               />
             </label>

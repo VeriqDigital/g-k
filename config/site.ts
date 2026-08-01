@@ -1,22 +1,20 @@
 import type { ModalType } from "@/components/layout/LeadModal";
 
 export const siteConfig = {
-  name: "PML Junk Removal",
-  shortName: "PML Junk Removal",
-  owner: "Jason Paullin",
+  name: "G&K Junk Removal",
+  shortName: "G&K Junk Removal",
+  owner: "Gavin",
   description:
-    "An unofficial website concept created by Veriq for PML Junk Removal in Johnston, Iowa.",
+    "An unofficial website concept created by Veriq for G&K Junk Removal in the Des Moines, Iowa area.",
   locale: "en_US",
   contact: {
-    phone: "(515) 901-3779",
-    phoneHref: "tel:+15159013779",
-    smsHref: "sms:+15159013779",
-    email: "jason.paullin@pml.com",
-    emailHref: "mailto:jason.paullin@pml.com",
-    address: "Johnston, Iowa",
-    serviceArea: "Serving the surrounding Des Moines metro",
-    mapUrl: "https://maps.google.com/?q=Johnston+Iowa",
-    mapEmbedUrl: "https://www.google.com/maps?q=Johnston+Iowa&output=embed",
+    phone: "(515) 505-1866",
+    phoneHref: "tel:+15155051866",
+    smsHref: "sms:+15155051866",
+    address: "Des Moines, Iowa",
+    serviceArea: "Serving Des Moines and surrounding areas",
+    mapUrl: "https://maps.google.com/?q=Des+Moines+Iowa",
+    mapEmbedUrl: "https://www.google.com/maps?q=Des+Moines+Iowa&output=embed",
   },
 } as const;
 
@@ -35,10 +33,10 @@ export const footerLinks: NavItem[] = [
   { label: "Services", href: "/#services" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "Preview Estimate Form", modal: "service" },
+  { label: "Ditch the Junk", modal: "service" },
 ];
 
 export const primaryCta = {
-  label: "Preview Estimate Form",
+  label: "Ditch the Junk",
   modal: "service",
 } as const satisfies { label: string; modal: ModalType };

@@ -26,14 +26,14 @@ const ContactCtaSection = () => {
           Ready to get your space back?
         </h2>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-[#666666]">
-          Call or text Jason directly with a description or photos of what
+          Call or text Gavin directly with a description or photos of what
           needs to be removed and ask about an estimate.
         </p>
       </div>
 
       <div className="flex min-w-56 flex-col gap-3">
-        <Button href={siteConfig.contact.phoneHref}>Call Jason</Button>
-        <Button href={siteConfig.contact.smsHref} variant="secondary">Text Jason</Button>
+        <Button href={siteConfig.contact.phoneHref}>Call Gavin</Button>
+        <Button href={siteConfig.contact.smsHref} variant="secondary">Text Gavin</Button>
         <Button onClick={() => openModal(primaryCta.modal)} variant="secondary">
           {primaryCta.label}
         </Button>

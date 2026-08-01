@@ -24,10 +24,17 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => {
         {displayedServices.map((service, index) => (
           <article
             key={service.title}
-            className="flex min-h-105 flex-col overflow-hidden border border-[#d8d5ce] bg-white"
+            className="flex h-full flex-col overflow-hidden border border-[#d8d5ce] bg-white"
           >
-            <div className="relative min-h-52 overflow-hidden bg-[#e7e9e4]">
-              <Image src={service.image} alt={service.title} fill className="object-cover transition duration-500 hover:scale-105" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            <div className="relative aspect-[600/485] overflow-hidden bg-[#e7e9e4]">
+              <Image
+                src={service.image}
+                alt={service.title}
+                fill
+                className="object-contain"
+                sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1023px) calc(50vw - 2.5rem), 400px"
+                quality={100}
+              />
             </div>
             <div className="flex flex-1 flex-col p-6">
               <p className="font-heading text-sm font-bold text-[#444444]">{String(index + 1).padStart(2, "0")}</p>

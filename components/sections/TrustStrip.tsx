@@ -45,7 +45,7 @@ const trustItems = [
 const TrustStrip = () => {
   return (
     <section
-      aria-label="PML Junk Removal concept service highlights"
+      aria-label="G&K Junk Removal concept service highlights"
       className="border-b border-[#d8d5ce] bg-[#f5f5f3]"
     >
       <div className="mx-auto grid max-w-(--container-width) grid-cols-[repeat(2,minmax(0,1fr))] px-4 sm:px-6 lg:grid-cols-[repeat(5,minmax(0,1fr))]">

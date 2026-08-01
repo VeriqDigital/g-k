@@ -3,9 +3,9 @@ import LocationSection from "@/components/sections/LocationSection";
 import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = {
-  title: "Contact Jason",
+  title: "Contact Gavin",
   description:
-    "Confirmed direct-contact details for PML Junk Removal, presented in an unofficial Veriq website concept.",
+    "Confirmed direct-contact details for G&K Junk Removal, presented in an unofficial Veriq website concept.",
 };
 
 export default function ContactPage() {

@@ -50,38 +50,38 @@ const Navbar = () => {
       <div className="mx-auto hidden h-32 w-full max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-10 lg:grid">
         <div className="justify-self-start">
           <p className="font-heading text-lg font-bold leading-tight text-[#202020]">
-            Locally owned in Johnston
+            Locally owned in Des Moines
           </p>
           <p className="mt-2 text-xs leading-5 text-[#4f4c47]">
-            Call, text, or email Jason directly to discuss a pickup.
+            Call or text Gavin directly to discuss a pickup.
           </p>
         </div>
 
         <Link
           href="/"
-          className="flex h-31 w-52 items-center justify-center"
-          aria-label="PML Junk Removal website concept home"
+          className="flex size-18 items-center justify-center"
+          aria-label="G&K Junk Removal website concept home"
         >
           <Image
-            src="/PML logo.png"
-            alt="PML Junk Removal logo, website concept"
-            width={198}
-            height={200}
+            src="/gk logo.png"
+            alt="G&K Junk Removal logo, website concept"
+            width={72}
+            height={72}
             className="h-full w-full object-contain"
-            sizes="208px"
+            sizes="72px"
             preload
           />
         </Link>
 
         <address className="justify-self-end text-right text-xs not-italic leading-5 text-[#4f4c47]">
           <p className="font-heading text-base font-bold text-[#202020]">
-            Call or text Jason
+            Call or text Gavin
           </p>
           <a href={siteConfig.contact.phoneHref} className="mt-1 block font-heading text-xl font-bold text-[#171717] hover:underline">
             {siteConfig.contact.phone}
           </a>
-          <a href={siteConfig.contact.emailHref} className="mt-1 block hover:text-black hover:underline">
-            {siteConfig.contact.email}
+          <a href={siteConfig.contact.smsHref} className="mt-1 block hover:text-black hover:underline">
+            Text Gavin
           </a>
         </address>
       </div>
@@ -97,34 +97,29 @@ const Navbar = () => {
               {item.label}
             </Link>
           ) : (
-            <button
+            <Button
               key={item.label}
-              type="button"
               onClick={() => openModal(item.modal)}
-              className={`${desktopNavItemClass} cursor-pointer`}
             >
               {item.label}
-            </button>
+            </Button>
           ),
         )}
-        <Button onClick={() => openModal(primaryCta.modal)}>
-          {primaryCta.label}
-        </Button>
       </nav>
 
       <nav className="relative mx-auto grid h-24 w-full grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center px-4 sm:h-30 sm:px-8 lg:hidden">
         <Link
           href="/"
-          className="relative z-10 col-start-2 flex h-22 w-36 items-center justify-center sm:h-28 sm:w-44 lg:h-31 lg:w-52"
-          aria-label="PML Junk Removal website concept home"
+          className="relative z-10 col-start-2 flex size-18 items-center justify-center"
+          aria-label="G&K Junk Removal website concept home"
         >
           <Image
-            src="/PML logo.png"
-            alt="PML Junk Removal logo, website concept"
-            width={198}
-            height={200}
+            src="/gk logo.png"
+            alt="G&K Junk Removal logo, website concept"
+            width={72}
+            height={72}
             className="h-full w-full object-contain"
-            sizes="(max-width: 640px) 144px, (max-width: 1024px) 176px, 208px"
+            sizes="72px"
             preload
           />
         </Link>
@@ -162,14 +157,14 @@ const Navbar = () => {
       <div className="grid grid-cols-3 border-t border-[#d8d8d5] bg-[#111111] text-center text-xs font-bold uppercase tracking-wide text-white lg:hidden">
         <a href={siteConfig.contact.phoneHref} className="min-w-0 border-r border-white/25 px-2 py-3 transition hover:bg-[#2a2a2a]">Call</a>
         <a href={siteConfig.contact.smsHref} className="min-w-0 border-r border-white/25 px-2 py-3 transition hover:bg-[#2a2a2a]">Text</a>
-        <button type="button" onClick={() => openModal(primaryCta.modal)} className="min-w-0 cursor-pointer px-1 py-3 text-[0.68rem] transition hover:bg-[#2a2a2a]">Get Estimate</button>
+        <button type="button" onClick={() => openModal(primaryCta.modal)} className="min-w-0 cursor-pointer px-1 py-3 text-[0.68rem] transition hover:bg-[#2a2a2a]">Ditch the Junk</button>
       </div>
 
       {isMenuOpen && (
         <div id="mobile-navigation-menu" className="w-full border-t border-[#d8d2c7] bg-white p-2 text-[#252525] shadow-[0_12px_30px_rgba(0,0,0,0.15)] lg:hidden">
           <div className="grid gap-1">
-            <a href={siteConfig.contact.emailHref} onClick={() => setIsMenuOpen(false)} className="block border-b border-[#e5e0d6] px-4 py-3 font-bold transition hover:bg-[#f3f3f1]">
-              Email {siteConfig.contact.email}
+            <a href={siteConfig.contact.smsHref} onClick={() => setIsMenuOpen(false)} className="block border-b border-[#e5e0d6] px-4 py-3 font-bold transition hover:bg-[#f3f3f1]">
+              Text Gavin at {siteConfig.contact.phone}
             </a>
             {navigation.map((item) =>
               "href" in item ? (

@@ -20,11 +20,11 @@ const robotoCondensed = Roboto_Condensed({
 
 export const metadata: Metadata = {
   title: {
-    default: "PML Junk Removal Website Concept | Veriq",
-    template: `%s | PML Junk Removal Website Concept`,
+    default: "G&K Junk Removal Website Concept | Veriq",
+    template: `%s | G&K Junk Removal Website Concept`,
   },
   description:
-    "An unofficial website concept created by Veriq for PML Junk Removal in Johnston, Iowa.",
+    "An unofficial website concept created by Veriq for G&K Junk Removal in the Des Moines, Iowa area.",
   robots: {
     index: false,
     follow: false,
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "PML Junk Removal Website Concept",
+    title: "G&K Junk Removal Website Concept",
     description: "Unofficial demonstration concept created by Veriq.",
-    siteName: "PML Junk Removal Website Concept",
+    siteName: "G&K Junk Removal Website Concept",
     locale: siteConfig.locale,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "PML Junk Removal Website Concept",
+    title: "G&K Junk Removal Website Concept",
     description: "Unofficial demonstration concept created by Veriq.",
   },
 };

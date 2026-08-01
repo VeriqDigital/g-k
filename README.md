@@ -1,9 +1,9 @@
-# PML Junk Removal Website Concept
+# G&K Junk Removal Website Concept
 
-An unofficial, non-affiliated website concept created by Veriq for PML Junk
-Removal in Johnston, Iowa.
+An unofficial, non-affiliated website concept created by Veriq for G&K Junk
+Removal in the Des Moines, Iowa area.
 
-This demonstration uses confirmed direct-contact details for Jason Paullin. Its
+This demonstration uses confirmed direct-contact details for Gavin. Its
 estimate and contact forms are interface previews only: submission is
 intercepted in the browser, no information is transmitted or stored, and no
 lead-delivery API is included. The site also disables indexing through page

@@ -22,9 +22,9 @@ const Button = ({
 
   const variantClasses = {
     primary:
-      "border-(--accent) bg-(--accent) text-white hover:border-(--accent-hover) hover:bg-(--accent-hover)",
+      "border-(--primary) bg-(--primary) text-white hover:border-(--primary-hover) hover:bg-(--primary-hover)",
     secondary:
-      "border-black bg-transparent text-black hover:bg-(--accent) hover:text-white",
+      "border-(--accent) bg-transparent text-(--accent) hover:bg-(--accent) hover:text-white",
   };
 
   if (href) {

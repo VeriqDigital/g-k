@@ -5,7 +5,7 @@ import Section from "@/components/ui/Section";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "About PML Junk Removal",
+  title: "About G&K Junk Removal",
   description: `About ${siteConfig.name}, presented in an unofficial Veriq website concept.`,
 };
 
@@ -13,17 +13,17 @@ const companyValues = [
   {
     title: "Direct communication",
     description:
-      "Work directly with Jason to discuss what needs to go and what the job involves.",
+      "Work directly with Gavin to discuss what needs to go and what the job involves.",
   },
   {
     title: "Respectful service",
     description:
-      "Contact Jason to discuss access details and any care needed around the property.",
+      "Contact Gavin to discuss access details and any care needed around the property.",
   },
   {
     title: "Clear next steps",
     description:
-      "Review the items, location, and job scope directly with Jason before scheduling.",
+      "Review the items, location, and job scope directly with Gavin before scheduling.",
   },
 ] as const;
 
@@ -34,34 +34,35 @@ export default function AboutPage() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="font-heading text-lg font-bold text-(--accent)">
-              Locally owned in Johnston
+              Locally owned in Des Moines
             </p>
             <h1 className="mt-3 max-w-2xl font-heading text-5xl font-bold leading-[1.05] text-[#202020] md:text-6xl">
               The easy way to clear out what you no longer need
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#625f59]">
-              {siteConfig.name} is locally owned and operated by Jason Paullin
-              in Johnston, Iowa. Call or text Jason to discuss what needs to go,
-              then let PML handle the lifting, loading, and hauling.
+              {siteConfig.name} is locally owned and operated by Gavin in the
+              Des Moines area. Call or text Gavin to discuss what needs to go,
+              then let G&amp;K handle the lifting, loading, and hauling.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-8 text-[#625f59]">
               Whether you have one bulky item or a larger cleanup in mind,
-              contact Jason to confirm the items, access details, service area,
+              contact Gavin to confirm the items, access details, service area,
               and current availability.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="/services">View Services</Button>
-              <Button href={siteConfig.contact.phoneHref} variant="secondary">Call Jason</Button>
+              <Button href={siteConfig.contact.phoneHref} variant="secondary">Call Gavin</Button>
             </div>
           </div>
 
-          <div className="relative min-h-105 overflow-hidden border border-[#d8d5ce] bg-[#ece9e2]">
+          <div className="relative mx-auto aspect-[382/510] w-full max-w-[382px] overflow-hidden border border-[#d8d5ce] bg-[#ece9e2]">
             <Image
-              src="/pexels-zeynep-sude-emek-193601188-29359069.jpg"
-              alt="Household items ready for junk removal"
+              src="/gk.jpg"
+              alt="Gavin of G&K Junk Removal beside a loaded hauling trailer"
               fill
               className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 55vw"
+              sizes="(max-width: 430px) calc(100vw - 3rem), 382px"
+              quality={100}
               preload
             />
           </div>
@@ -100,13 +101,14 @@ export default function AboutPage() {
 
       <Section>
         <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div className="relative min-h-90 overflow-hidden border border-[#d8d5ce] bg-[#ece9e2]">
+          <div className="relative aspect-[600/485] overflow-hidden border border-[#d8d5ce] bg-[#ece9e2]">
             <Image
-              src="/pexels-jakobjin-13885592.jpg"
-              alt="Household items in a cluttered garage"
+              src="/ba1.png"
+              alt="Room before and after a G&K Junk Removal cleanout"
               fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-contain"
+              sizes="(max-width: 1024px) calc(100vw - 3rem), 600px"
+              quality={100}
             />
           </div>
 
@@ -115,12 +117,12 @@ export default function AboutPage() {
               Local and ready to help
             </p>
             <h2 className="mt-3 font-heading text-4xl font-bold text-[#202020] md:text-5xl">
-              Johnston and Des Moines metro inquiries
+              Des Moines and surrounding-area inquiries
             </h2>
             <p className="mt-5 text-lg leading-8 text-[#625f59]">
-              PML Junk Removal is based in Johnston, Iowa. Contact Jason
-              directly to confirm service availability at your address in the
-              surrounding metro.
+              G&amp;K Junk Removal serves Des Moines and surrounding areas.
+              Contact Gavin directly to confirm service availability at your
+              address.
             </p>
             <div className="mt-7">
               <Button

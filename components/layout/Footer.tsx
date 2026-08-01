@@ -28,7 +28,7 @@ const Footer = () => {
               {siteConfig.description}
             </p>
             <p className="mt-5 font-heading text-lg font-bold">
-              Call, text, or email Jason directly to discuss a pickup.
+              Call or text Gavin directly to discuss a pickup.
             </p>
           </div>
 
@@ -62,26 +62,25 @@ const Footer = () => {
 
           <div>
             <h2 className="font-heading text-lg font-bold uppercase">
-              Contact Jason
+              Contact Gavin
             </h2>
             <address className="mt-5 text-sm not-italic leading-7 text-[#4f4c47]">
               <p>{siteConfig.contact.address}</p>
               <p>{siteConfig.contact.serviceArea}</p>
               <p className="mt-3 font-semibold text-[#171717]">Call or text:</p>
               <a href={siteConfig.contact.phoneHref} className="block hover:underline">{siteConfig.contact.phone}</a>
-              <a href={siteConfig.contact.smsHref} className="block hover:underline">Text Jason</a>
-              <a href={siteConfig.contact.emailHref} className="mt-2 block break-all hover:underline">{siteConfig.contact.email}</a>
+              <a href={siteConfig.contact.smsHref} className="block hover:underline">Text Gavin</a>
             </address>
           </div>
         </div>
 
         <div className="mt-14 border-t border-[#cbc7bf] pt-6 text-center text-xs font-semibold text-[#6f6b64] sm:flex sm:items-start sm:justify-between sm:text-left">
           <div className="max-w-3xl">
-            <p>Unofficial website concept created by Veriq for demonstration purposes. This website is not currently operated by or affiliated with PML Junk Removal.</p>
+            <p>Unofficial website concept created by Veriq for demonstration purposes. This website is not currently operated by or affiliated with G&amp;K Junk Removal.</p>
             <p className="mt-2">&copy; 2026 Veriq. Demonstration concept.</p>
           </div>
           <div>
-            <p className="mt-2 sm:mt-0">Johnston, Iowa</p>
+            <p className="mt-2 sm:mt-0">Des Moines, Iowa</p>
             <p className="mt-1 normal-case text-[#6f6b64]">
               Website designed by{" "}
               <Link
