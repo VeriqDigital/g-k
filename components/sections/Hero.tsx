@@ -45,7 +45,7 @@ const Hero = () => {
               </Button>
               <Button href={siteConfig.contact.phoneHref} variant="secondary">Call Gavin</Button>
             </div>
-            <a href={siteConfig.contact.smsHref} className="mt-4 inline-block text-sm font-semibold text-[#555555] underline decoration-[#999999] underline-offset-4 transition hover:text-black">
+            <a href={siteConfig.contact.smsHref} className="mt-4 inline-block text-sm font-semibold text-[#555555] underline decoration-(--accent) underline-offset-4 transition hover:text-(--accent)">
               Prefer texting? Text {siteConfig.contact.phone}
             </a>
           </div>

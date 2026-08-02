@@ -93,7 +93,7 @@ const LeadModal = ({
           </div>
         ) : (
           <form className="space-y-4" onSubmit={onSubmit}>
-            <div className="border-l-4 border-[#111111] bg-[#f3f3f1] p-3 text-sm text-[#555555]">
+            <div className="border-l-4 border-(--accent) bg-[#f3f3f1] p-3 text-sm text-[#555555]">
               <p className="font-bold text-[#171717]">Demo form only</p>
               <p className="mt-1">This form does not send a message. Call or text Gavin directly at <a href={siteConfig.contact.phoneHref} className="font-semibold underline">{siteConfig.contact.phone}</a>.</p>
             </div>
@@ -202,7 +202,7 @@ const LeadModal = ({
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="cursor-pointer bg-(--accent) px-5 py-2.5 font-semibold text-white transition hover:bg-(--accent-hover) disabled:cursor-not-allowed disabled:opacity-60"
+                className="cursor-pointer bg-(--accent) px-5 py-2.5 font-semibold text-black transition hover:bg-(--accent-hover) hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isSubmitting ? "Sending" : activeContent.submitLabel}
               </button>

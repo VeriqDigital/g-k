@@ -2,7 +2,7 @@ import Link from "next/link";
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "dark";
   href?: string;
   newTab?: boolean;
   onClick?: () => void;
@@ -22,9 +22,11 @@ const Button = ({
 
   const variantClasses = {
     primary:
-      "border-(--primary) bg-(--primary) text-white hover:border-(--primary-hover) hover:bg-(--primary-hover)",
+      "border-(--primary) bg-(--primary) text-black hover:border-(--primary-hover) hover:bg-(--primary-hover) hover:text-white",
     secondary:
-      "border-(--accent) bg-transparent text-(--accent) hover:bg-(--accent) hover:text-white",
+      "border-(--accent) bg-transparent text-(--accent) hover:bg-(--accent) hover:text-black",
+    dark:
+      "border-[#111111] bg-[#111111] text-white hover:border-(--accent) hover:bg-(--accent) hover:text-black",
   };
 
   if (href) {

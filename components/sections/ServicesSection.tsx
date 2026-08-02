@@ -26,7 +26,7 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => {
             key={service.title}
             className="flex h-full flex-col overflow-hidden border border-[#d8d5ce] bg-white"
           >
-            <div className="relative aspect-[600/485] overflow-hidden bg-[#e7e9e4]">
+            <div className="relative aspect-[600/525] overflow-hidden bg-[#e7e9e4]">
               <Image
                 src={service.image}
                 alt={service.title}
@@ -35,9 +35,15 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => {
                 sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1023px) calc(50vw - 2.5rem), 400px"
                 quality={100}
               />
+              {"cropTop" in service && service.cropTop && (
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-x-0 top-0 h-[5.8%] bg-[#cbd8da]"
+                />
+              )}
             </div>
             <div className="flex flex-1 flex-col p-6">
-              <p className="font-heading text-sm font-bold text-[#444444]">{String(index + 1).padStart(2, "0")}</p>
+              <p className="font-heading text-sm font-bold text-(--accent)">{String(index + 1).padStart(2, "0")}</p>
               <h3 className="font-heading text-xl font-black uppercase text-[#202020]">{service.title}</h3>
               <p className="mt-4 text-sm leading-6 text-[#625f59]">{service.description}</p>
             </div>

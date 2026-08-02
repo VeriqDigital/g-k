@@ -10,6 +10,7 @@ export const services = [
     description:
       "Discuss unwanted items in a home, rental, basement, garage, or storage space and confirm the scope directly with Gavin.",
     image: "/ba1.png",
+    cropTop: true,
   },
   {
     title: "Furniture Removal",

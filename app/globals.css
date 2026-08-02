@@ -3,14 +3,14 @@
 :root {
   --background: #f3f3f1;
   --surface: #ffffff;
-  --surface-deep: #111111;
+  --surface-deep: #fe7111;
   --surface-hover: #e8e8e5;
   --foreground: #171717;
   --muted: #666666;
-  --primary: #111111;
-  --primary-hover: #2a2a2a;
-  --accent: #ff7d00;
-  --accent-hover: #d96800;
+  --primary: #fe7111;
+  --primary-hover: #d95a00;
+  --accent: #fe7111;
+  --accent-hover: #d95a00;
   --border: #d8d8d5;
   --container-width: 1280px;
   --radius-sm: 6px;

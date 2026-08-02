@@ -59,16 +59,16 @@ const Navbar = () => {
 
         <Link
           href="/"
-          className="flex size-18 items-center justify-center"
+          className="flex size-28 items-center justify-center"
           aria-label="G&K Junk Removal website concept home"
         >
           <Image
-            src="/gk logo.png"
+            src="/high-res-logo-clean.png"
             alt="G&K Junk Removal logo, website concept"
-            width={72}
-            height={72}
+            width={1254}
+            height={1254}
             className="h-full w-full object-contain"
-            sizes="72px"
+            sizes="112px"
             preload
           />
         </Link>
@@ -77,10 +77,16 @@ const Navbar = () => {
           <p className="font-heading text-base font-bold text-[#202020]">
             Call or text Gavin
           </p>
-          <a href={siteConfig.contact.phoneHref} className="mt-1 block font-heading text-xl font-bold text-[#171717] hover:underline">
+          <a
+            href={siteConfig.contact.phoneHref}
+            className="mt-1 block font-heading text-xl font-bold text-[#171717] hover:underline"
+          >
             {siteConfig.contact.phone}
           </a>
-          <a href={siteConfig.contact.smsHref} className="mt-1 block hover:text-black hover:underline">
+          <a
+            href={siteConfig.contact.smsHref}
+            className="mt-1 block hover:text-(--accent) hover:underline"
+          >
             Text Gavin
           </a>
         </address>
@@ -100,6 +106,7 @@ const Navbar = () => {
             <Button
               key={item.label}
               onClick={() => openModal(item.modal)}
+              variant="dark"
             >
               {item.label}
             </Button>
@@ -110,16 +117,16 @@ const Navbar = () => {
       <nav className="relative mx-auto grid h-24 w-full grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center px-4 sm:h-30 sm:px-8 lg:hidden">
         <Link
           href="/"
-          className="relative z-10 col-start-2 flex size-18 items-center justify-center"
+          className="relative z-10 col-start-2 flex size-20 items-center justify-center"
           aria-label="G&K Junk Removal website concept home"
         >
           <Image
-            src="/gk logo.png"
+            src="/high-res-logo-clean.png"
             alt="G&K Junk Removal logo, website concept"
-            width={72}
-            height={72}
+            width={1254}
+            height={1254}
             className="h-full w-full object-contain"
-            sizes="72px"
+            sizes="80px"
             preload
           />
         </Link>
@@ -127,7 +134,7 @@ const Navbar = () => {
         <div className="col-start-1 row-start-1 lg:hidden">
           <button
             type="button"
-            className="flex size-10 items-center justify-center border-2 border-[#252525] text-[#252525] transition hover:border-(--accent) hover:text-(--accent)"
+            className="flex size-10 items-center justify-center border-2 border-(--accent) text-(--accent) transition hover:border-(--accent-hover) hover:text-(--accent-hover)"
             aria-label={
               isMenuOpen ? "Close navigation menu" : "Open navigation menu"
             }
@@ -154,16 +161,39 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className="grid grid-cols-3 border-t border-[#d8d8d5] bg-[#111111] text-center text-xs font-bold uppercase tracking-wide text-white lg:hidden">
-        <a href={siteConfig.contact.phoneHref} className="min-w-0 border-r border-white/25 px-2 py-3 transition hover:bg-[#2a2a2a]">Call</a>
-        <a href={siteConfig.contact.smsHref} className="min-w-0 border-r border-white/25 px-2 py-3 transition hover:bg-[#2a2a2a]">Text</a>
-        <button type="button" onClick={() => openModal(primaryCta.modal)} className="min-w-0 cursor-pointer px-1 py-3 text-[0.68rem] transition hover:bg-[#2a2a2a]">Ditch the Junk</button>
+      <div className="grid grid-cols-3 border-t border-[#d8d8d5] bg-(--accent) text-center text-xs font-bold uppercase tracking-wide text-black lg:hidden">
+        <a
+          href={siteConfig.contact.phoneHref}
+          className="min-w-0 border-r border-black/20 px-2 py-3 transition hover:bg-(--accent-hover) hover:text-white"
+        >
+          Call
+        </a>
+        <a
+          href={siteConfig.contact.smsHref}
+          className="min-w-0 border-r border-black/20 px-2 py-3 transition hover:bg-(--accent-hover) hover:text-white"
+        >
+          Text
+        </a>
+        <button
+          type="button"
+          onClick={() => openModal(primaryCta.modal)}
+          className="min-w-0 cursor-pointer px-1 py-3 text-[0.68rem] transition hover:bg-(--accent-hover) hover:text-white"
+        >
+          Ditch the Junk
+        </button>
       </div>
 
       {isMenuOpen && (
-        <div id="mobile-navigation-menu" className="w-full border-t border-[#d8d2c7] bg-white p-2 text-[#252525] shadow-[0_12px_30px_rgba(0,0,0,0.15)] lg:hidden">
+        <div
+          id="mobile-navigation-menu"
+          className="w-full border-t border-[#d8d2c7] bg-white p-2 text-[#252525] shadow-[0_12px_30px_rgba(0,0,0,0.15)] lg:hidden"
+        >
           <div className="grid gap-1">
-            <a href={siteConfig.contact.smsHref} onClick={() => setIsMenuOpen(false)} className="block border-b border-[#e5e0d6] px-4 py-3 font-bold transition hover:bg-[#f3f3f1]">
+            <a
+              href={siteConfig.contact.smsHref}
+              onClick={() => setIsMenuOpen(false)}
+              className="block border-b border-[#e5e0d6] px-4 py-3 font-bold transition hover:bg-[#f3f3f1]"
+            >
               Text Gavin at {siteConfig.contact.phone}
             </a>
             {navigation.map((item) =>
